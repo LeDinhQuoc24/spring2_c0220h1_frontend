@@ -1,0 +1,67 @@
+<div class="loginbox">
+  <div class="imageDiv">
+    <img [src]="url" class="avatar" alt="">
+    <input type="file" id="choiceImg" class="inputImg" (change)="changeImg($event)">
+  </div>
+  <h1>{{ 'information.title' | translate }}</h1>
+  <form [formGroup]="infoForm" id="contact" action="" method="post">
+    <div class="row">
+      <label>{{ 'information.username' | translate }}</label>
+      <input  class=" form-control"  type="text" >
+    </div>
+    <div class="row">
+      <label>{{ 'information.fullName' | translate }}</label>
+      <input  class=" form-control"  type="text" >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.email' | translate }}</label>
+      <input  class=" form-control"  type="email" >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.birth' | translate }}</label>
+      <input  class=" form-control"  type="date" >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.id_card' | translate }}</label>
+      <input  class=" form-control"  type="text" >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.current_password' | translate }}</label>
+      <input  class=" form-control"  type="text" >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.new_password' | translate }}</label>
+      <input  class=" form-control"  type="text" >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.confirm_password' | translate }}</label>
+      <input  class=" form-control"  type="text" >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.phone' | translate }}</label>
+      <input  class=" form-control"  type="text"  >
+    </div>
+
+    <div class="row">
+      <label>{{ 'information.address' | translate }}</label>
+      <input  class=" form-control"  type="text"  >
+    </div>
+  </form>
+
+  <div class="row " id="button">
+    <button  type="button" class="edit"
+             [disabled]="infoForm.invalid" (click)="editInfo()">
+      {{ 'information.update' | translate }}
+    </button>
+    <button type="button" class="edit" (click)="cancel()">
+      {{ 'information.cancel' | translate }}
+    </button>
+  </div>
+</div>
