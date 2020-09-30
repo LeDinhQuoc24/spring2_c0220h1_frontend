@@ -19,7 +19,20 @@
     "id_card": "CMND",
     "address": "Địa chỉ",
     "update": "Cập nhật",
-    "cancel": "Hủy"
+    "cancel": "Hủy",
+    "valid": {
+      "name": "Tên đăng nhập không hợp lệ",
+      "fullName": "Họ và tên không hợp lệ",
+      "email": "Hộp thư không hợp lệ",
+      "birth": "Ngày sinh không hợp lệ",
+      "idCard": "CMND không hợp lệ",
+      "passwordCurrent": "Mật khẩu cũ không hợp lệ",
+      "passwordNew": "Mật khẩu mới không hợp lệ",
+      "passwordConfirm": "Xác nhận mật khẩu không hợp lệ",
+      "phone": "Số điện thoại không hợp lệ",
+      "address": "Địa chỉ không hợp lệ",
+      "password_no_match": "Mật khẩu không trùng khớp"
+    }
   },
   "history_register":{
     "title": "Lịch sử đăng ký đấu giá",

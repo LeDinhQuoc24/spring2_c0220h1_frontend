@@ -10,40 +10,13 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>AAAAA</td>
-    <td>BBBBB</td>
-    <td>CCCCC</td>
-    <td>DDDDD</td>
-    <td>EEEEE</td>
+  <tr  *ngFor="let item of historyRegister">
+    <td>{{item.productName}}</td>
+    <td>{{item.productInformation}}</td>
+    <td>{{item.registrationDate}}</td>
+    <td>{{item.statusRegister}}</td>
+    <td>{{item.cancelRegister}}</td>
   </tr>
-  <tr>
-    <td>AAAAA</td>
-    <td>BBBBB</td>
-    <td>CCCCC</td>
-    <td>DDDDD</td>
-    <td>EEEEE</td>
-  </tr>
-  <tr>
-    <td>AAAAA</td>
-    <td>BBBBB</td>
-    <td>CCCCC</td>
-    <td>DDDDD</td>
-    <td>EEEEE</td>
-  </tr>
-  <tr>
-    <td>AAAAA</td>
-    <td>BBBBB</td>
-    <td>CCCCC</td>
-    <td>DDDDD</td>
-    <td>EEEEE</td>
-  </tr>
-  <tr>
-    <td>AAAAA</td>
-    <td>BBBBB</td>
-    <td>CCCCC</td>
-    <td>DDDDD</td>
-    <td>EEEEE</td>
-  </tr>
+
   </tbody>
 </table>

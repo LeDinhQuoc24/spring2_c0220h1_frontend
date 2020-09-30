@@ -13,13 +13,13 @@ table thead  th,td{
   border: white;
 }
 table {
-  /*display: block;*/
-  /*overflow-x: auto;*/
-  white-space: nowrap;
-  border-radius: 20px;
-  margin-top: 10%;
-  background-color: transparent;
-}
+   /*display: block;*/
+   /*overflow-x: auto;*/
+   white-space: nowrap;
+   border-radius: 20px;
+   margin-top: 10%;
+   background-color: transparent;
+ }
 th {
   text-align: center;
 }
